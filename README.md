@@ -1,3 +1,35 @@
+
+## ✁ - - - - - - - - - - - - - - - - - - - - - -
+
+# This branch
+
+## Description
+
+Fixing: assumed problems with PhantomJS.
+
+## Status
+
+❌Cancelled
+
+## Findings
+
+It turned out that PhantomJS (PJS) doesn't work at all with the current version of Youtube (YT).
+The reason it worked before was because YT appeared to serve an old YT page version to PJS¹, probably because it deemed it necessary that this "browser" couldn't handle the new version.
+That seemed to stop at some point, and PJS right now is no longer able to load YT:
+
+![Image of Yaktocat](bin/seen.png)
+
+PJS itself seems to no longer be developed, with [latest release](https://github.com/ariya/phantomjs/releases) being 2.1.1 on Jan 24, 2016.
+
+
+¹ I observed that a long time ago, when I was tinkering on the project, and made the page be displayed so I can pick some selectors, because they were not the same as in my browser (YT was already a newer version even back then)
+
+## Conclusion
+
+PJS seems unable to serve its purpose anymore.
+
+## ✃ - - - - - - - - - - - - - - - - - - - - - -
+
 # Youtube comment scraper
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 [![npm version](https://badge.fury.io/js/youtube-comment-scraper.svg)](https://badge.fury.io/js/youtube-comment-scraper)
