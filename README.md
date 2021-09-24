@@ -1,3 +1,31 @@
+## ✁ - - - - - - - - - - - - - - - - - - - - - -
+
+# This branch
+
+## Description
+
+Ability to deal with the Google consent page.
+
+## Status
+
+❌Cancelled
+
+## Findings
+
+The Google consent page was something you got redirected to (entirely different domain) when you visited Youtube.
+Once you accepted, it would redirect back to Youtube.
+
+That has since been replace with a modal pop-up on the Youtube page itself.
+
+This branch was only about working on the former.
+The latter is out of scope, because the whole breakage that generally occurs when PhantomJS tries to load Youtube (see c758713a).
+
+## Conclusion
+
+Abandoned, but relevant if that method of asking for consent comes back.
+
+## ✃ - - - - - - - - - - - - - - - - - - - - - -
+
 # Youtube comment scraper
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 [![npm version](https://badge.fury.io/js/youtube-comment-scraper.svg)](https://badge.fury.io/js/youtube-comment-scraper)
